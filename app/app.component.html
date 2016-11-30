@@ -2,6 +2,7 @@
 <script> - for protection against script injection attacks
 -->
 
+<!-- Interpolation section 4, 9 & 10
 <h1>My First Angular 2 App</h1>
 <br>
 <p>Hello, {{username}}!</p>
@@ -13,3 +14,23 @@
 <p>Hello, {{getUsername()}}!</p>
 
 <input type="text" value="{{getUsername()}}">
+ -->
+
+<h1>My First Angular 2 App</h1>
+
+<div>
+  <p>Hello, {{ currentUser.username }}!</p>
+  <!-- binding hidden property to p tag -->
+  <p [hidden]='hideEmail'>Your email is <em>{{ currentUser.email }}</em></p>
+</div>
+
+<input [disabled]="disabledInput" type="text" placeholder="Enter your text">
+
+<!-- call value from isDiabled function -->
+<input [disabled]="isDisabled()" type="text" placeholder="Enter your text">
+<!-- value takes precedence to placeholder. i.e seeded data. placeholder will always remain -->
+<input [disabled]="isDisabled()" type="text" placeholder="Enter your text" [value]="currentUser.username">
+
+<input [class.blue-bg]="isBlueBg" type="text" placeholder="Enter your text">
+
+<input [style.background-color]="bgColor" type="text" placeholder="Enter your text">
