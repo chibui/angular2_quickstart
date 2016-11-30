@@ -1,0 +1,15 @@
+<!-- invalid angular 2 html tags
+<script> - for protection against script injection attacks
+-->
+
+<h1>My First Angular 2 App</h1>
+<br>
+<p>Hello, {{username}}!</p>
+
+<p>Hello, {{currentUser.username}} - {{currentUser.email}}</p>
+
+<p>Hello, {{currentUser.username + ' - ' + currentUser.email}}</p>
+
+<p>Hello, {{getUsername()}}!</p>
+
+<input type="text" value="{{getUsername()}}">

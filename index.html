@@ -7,18 +7,22 @@
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-
+    <!-- Required for angular 2 (follow up) -->
     <script src="node_modules/zone.js/dist/zone.js"></script>
+    <!-- Usage of decorators (follow up) -->
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <!-- inlcuding systemjs modular (follow up) -->
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-
+    <!-- Dynamic module loader (for libraries) -->
     <script src="systemjs.config.js"></script>
+    <!-- Load app/main.js -->
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
 
   <body>
+    <!-- my-app is a selector, refer to app.component.ts -->
     <my-app>Loading...</my-app>
   </body>
 </html>
