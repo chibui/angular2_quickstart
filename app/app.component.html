@@ -29,7 +29,7 @@
 <!-- call value from isDiabled function -->
 <input [disabled]="isDisabled()" type="text" placeholder="Enter your text">
 <!-- value takes precedence to placeholder. i.e seeded data. placeholder will always remain -->
-<input [disabled]="isDisabled()" type="text" placeholder="Enter your text" [value]="currentUser.username">
+<input [style.color]="fontcolor" [disabled]="isDisabled()" type="text" placeholder="Enter your text" [value]="currentUser.email">
 
 <input [class.blue-bg]="isBlueBg" type="text" placeholder="Enter your text">
 

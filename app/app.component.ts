@@ -25,14 +25,16 @@ export class AppComponent {
   private hideEmail:boolean = true
 
   private disabledInput:boolean = false
+  private disabledInput2:boolean = true
 
   // returns the value of [disabledInput]
   private isDisabled():boolean {
-    return this.disabledInput
+    return this.disabledInput2
   }
 
   private isBlueBg:boolean = true
   private bgColor:string = 'red' // can also be hex or rgba
+  private fontcolor:string = '#000cff'
 }
 
   // interface - similar to classes but only define types. maybe validation here?
